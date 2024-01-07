@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= params[:filename] %></title>
+  <link rel="stylesheet" href="/stylesheets/docs.css">
+</head>
+
+<body>
+
+<% if @index_link %>
+  <a href="/">Back to Index</a>
+<% end %>
+
+<div>
+  <%= @html_content %>
+</div>
+
+</body>
+</html>

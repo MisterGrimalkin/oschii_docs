@@ -1,0 +1,43 @@
+body {
+    background: #363636;
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+p {
+    color: #c9c8c8;
+}
+
+table {
+    background: #1e1e1e;
+    border-collapse: collapse;
+    border: 2px solid #5b5b5b;
+}
+
+th {
+    background: #000000;
+    border: 1px solid #444343;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid #444343;
+    text-align: left;
+    padding: 8px;
+}
+
+code {
+    background: #1e1e1e;
+    padding: 3px;
+}
+
+pre {
+    background: #1e1e1e;
+    padding: 20px;
+}
+
+a {
+    color: white;
+}
