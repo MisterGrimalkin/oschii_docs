@@ -3,7 +3,7 @@
 menu:
 	ruby tools/menu.rb
 
-### Documentation
+### DOCUMENTATION
 
 open: ## Open in browser
 	open http://localhost:8003

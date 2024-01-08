@@ -6,6 +6,12 @@ MakeMenu.run do |menu|
 ║ ║└─┐│  ├─┤││
 ╚═╝└─┘└─┘┴ ┴┴┴'.bold.magenta
 
+  menu.header do
+    puts LOGO.align_block :center
+    puts '──── DOCS ────'.magenta.align :center
+    puts
+  end
+
   menu.options do
     {
       group_title_color: %i[magenta bold]
@@ -16,11 +22,5 @@ MakeMenu.run do |menu|
     {
       'browser' => :underline
     }
-  end
-
-  menu.header do
-    puts LOGO.align_block :center
-    puts 'Reference Manual'.magenta.align :center
-    puts
   end
 end
