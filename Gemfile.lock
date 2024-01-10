@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     base64 (0.2.0)
-    make_menu (1.0.0)
+    make_menu (2.0.0)
       tty-screen (~> 0.8.2)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
@@ -24,7 +24,7 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
-  make_menu
+  make_menu (~> 2.0.0)
   redcarpet
   sinatra
 
