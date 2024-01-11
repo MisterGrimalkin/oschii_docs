@@ -1,26 +1,26 @@
 require 'make_menu'
 
-MakeMenu.run do |menu|
-  LOGO = '
+LOGO = '
 ╔═╗┌─┐┌─┐┬ ┬┬┬
 ║ ║└─┐│  ├─┤││
-╚═╝└─┘└─┘┴ ┴┴┴'.bold.magenta
+╚═╝└─┘└─┘┴ ┴┴┴
+'.strip.bold.magenta
 
+OPTIONS = {
+  group_title_color: %i[magenta bold]
+}
+
+HIGHLIGHTS = {
+  'browser' => :underline
+}
+
+MakeMenu.run do |menu|
+  menu.options { OPTIONS }
+  menu.highlights { HIGHLIGHTS }
   menu.header do
+    puts
     puts LOGO.align_block :center
     puts '──── DOCS ────'.magenta.align :center
     puts
-  end
-
-  menu.options do
-    {
-      group_title_color: %i[magenta bold]
-    }
-  end
-
-  menu.highlights do
-    {
-      'browser' => :underline
-    }
   end
 end
